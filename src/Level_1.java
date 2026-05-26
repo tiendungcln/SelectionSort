@@ -20,9 +20,14 @@ public class Level_1 {
 
             }
 
-            int temp = arr[i];
-            arr[i] = arr[minIndex];
-            arr[minIndex] = temp;
+            // Nếu minIndex == i rồi thì k cần swap nữa
+            if (minIndex != i){
+
+                int temp = arr[i];
+                arr[i] = arr[minIndex];
+                arr[minIndex] = temp;
+
+            }
 
         }
 
@@ -46,9 +51,14 @@ public class Level_1 {
 
             }
 
-            int temp = arr[i];
-            arr[i] = arr[maxIndex];
-            arr[maxIndex] = temp;
+            // Nếu maxIndex == i rồi thì k cần swap nữa
+            if (maxIndex != i){
+
+                int temp = arr[i];
+                arr[i] = arr[maxIndex];
+                arr[maxIndex] = temp;
+
+            }
 
         }
 
